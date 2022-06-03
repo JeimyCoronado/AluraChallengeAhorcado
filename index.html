@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="logo"><img src="imagenes/Logo.png"></div>
+    <div id="pagina-principal" class="botones-inicio">
+        <button class="Iniciar-juego" onclick="jugar()">Iniciar juego</button>
+        <button class="nueva-palabra" onclick="ingresarPalabra()">Agregar nueva palabra</button>
+    </div>
+    <div id="pagina-juego">
+        <div id="dibujo"><canvas width="650" height="450"></canvas>
+            <div class="resultado"><textarea type="text" id="resultado" spellcheck="false" readonly></textarea></div>
+        </div>
+        <div id="correcto">
+        </div>
+        <div id="incorrecto">
+        </div>
+        <div id="dibujo"><textarea id="letrasErradas" spellcheck="false" readonly></textarea></div>
+        <div class="botones">
+            <button class="nuevo-juego" onclick="jugar()">Nuevo juego</button>
+            <button class="desistir" onclick="cancelar()">Desistir</button>
+        </div>
+    </div>
+    
+    <div id="pagina-palabra">
+        <div class="palabra"><textarea id="ingresar-palabra" spellcheck="false" type="text" maxlength="8" placeholder="Ingrese una palabra"></textarea></div>
+        <div class="botones">
+            <button id="boton" onclick="agregar()">Guardar y empezar</button>
+            <button id="cancelar" onclick="cancelarNuevaPalabra()">Cancelar</button>
+        </div>
+    </div>
+    <h2>Jeimy Coronado</h2>
+    <script type="text/javascript" src="javascript/js.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+body{
+    background-color: #E5E5E5;
+}
+
+.logo{
+    width: fit-content;
+    position: absolute;
+    vertical-align: top;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+#pagina-juego,#pagina-palabra{
+    display: none;
+}
+
+.base-letras{
+    width: 50px;
+    margin: 0;
+    visibility: hidden;
+}
+.div1{
+    margin: 0 10px;
+    display: inline-block;
+    border-bottom: 3px solid #0A3871;
+}
+#correcto{
+    width: 800px;
+    text-align: center;
+    margin: 10px auto;
+    color: #0A3871;
+    font-size: 30px;
+}
+
+canvas{
+    margin: 0 auto;
+    display: inline-block;    
+}
+#dibujo{
+    text-align: center;
+}
+#letrasErradas{
+    text-align: center;
+    resize: none;
+    width: 800px;
+    font-size: 40px;
+    color: #495057;
+    border: 0;
+    outline: none;
+    cursor: default;
+    background-color: #E5E5E5;
+}
+
+.resultado{
+    width: fit-content;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    vertical-align: middle;
+}
+
+#resultado{
+    resize: none;
+    border: 0;
+    font-size: 30px;
+    outline: none;
+    cursor: default;
+    background-color: #E5E5E5;
+
+}
+
+.botones{
+    margin: 15px auto;
+    width: fit-content;
+}
+
+button{
+    width: 280px;
+    height: 60px;
+    border-radius: 24px;
+    font-family: 'Inter';
+    font-size: 20px;
+    display: inline-block;
+    border-color: #0A3871;
+    opacity: 1;
+    cursor: pointer;
+    margin: 0 25px;
+}
+
+.nuevo-juego,.desistir:hover,.nueva-palabra:hover,#boton,#cancelar{
+    background-color: #0A3871;
+    color: white;
+}
+
+.desistir,.nuevo-juego:hover,.Iniciar-juego:hover,#boton:hover,#cancelar:hover{
+    background-color: white;
+    color: #0A3871;
+}
+
+.botones-inicio{
+    width: fit-content;
+    margin: 18% 35%;
+    position: absolute;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Iniciar-juego{
+    width: 317px;
+    height: 114px;
+    background-color: #0A3871;
+    color: white;
+    display: block;
+}
+
+.nueva-palabra{
+    width: 280px;
+    height: 67px;
+    background-color: white;
+    color: #0A3871;
+    display: block;
+    margin: 20px auto;
+}
+
+.palabra{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+#ingresar-palabra{
+    width: 500px;
+    margin: 5px auto;
+    height: 380px;
+    font-size: 32px;
+    text-align: center;
+    resize: none;
+    outline: none;
+    background-color: #E5E5E5;
+    color: #0A3871;
+    border: 0;
+    text-transform: uppercase;
+    display: block;
+}
+
+#ingresar-palabra::placeholder{
+    color: #0A3871;
+}
+
+h2{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px;
+    border: solid;
+    width: fit-content;
+    bottom: 0%;
+    display: block;
+    position: absolute;
+}
